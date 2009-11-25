@@ -1,0 +1,32 @@
+  source = PoolSource {
+    untracked vstring fileNames = {
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/08C42990-0CD0-DC11-9E89-001617E30D12.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/2E7D8591-0CD0-DC11-A858-000423D6B42C.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/3032CE54-0DD0-DC11-936C-0019DB29C614.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/3CB87B41-0ED0-DC11-BCF0-001617C3B78C.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/3E4C9B2E-0CD0-DC11-B284-001617E30F56.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/48407615-0BD0-DC11-A515-000423D99AAA.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/5AD594D1-0BD0-DC11-9F6E-000423D99F1E.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/68A205D1-0BD0-DC11-BF21-001617C3B6DE.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/70AEE0E9-0DD0-DC11-B1B1-000423D6BA18.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/7618682B-0CD0-DC11-969B-001617C3B6E2.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/96219754-0DD0-DC11-A55F-001617E30D06.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/B45488D2-0BD0-DC11-8FA7-000423D95220.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/BAA29BF1-0CD0-DC11-BEF3-001617C3B70E.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/D42D34EA-0DD0-DC11-BDBA-000423D9880C.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/DAD0A5D1-0BD0-DC11-AB56-0019DB29C614.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/E663D3D2-0BD0-DC11-8B1C-000423D986A8.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/EA8FF10C-0BD0-DC11-83AD-000423D998BA.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0000/FE53D954-0DD0-DC11-B548-001617C3B782.root',
+      '/store/relval/2008/1/29/RelVal-RelValHiggsH165WW2l-1199722255-HLT/0001/F8D934A9-0FD0-DC11-A081-000423D9863C.root'
+    }
+  }
+
+
+   module hltHiggsValidation = hltHiggsBits from "HLTriggerOffline/Higgs/data/hltHiggsBits.cfi"
+   replace hltHiggsValidation.Nchannel = 2
+   replace hltHiggsValidation.hltBitNames = {"HLT1MuonNonIso", "HLT1ElectronRelaxed", "HLT1MuonIso", "HLT1Electron", "HLT2MuonNonIso", 
+                                             "CandHLT2MuonIso", "HLT2ElectronRelaxed", "HLT2Electron", "HLTXElectronMuonRelaxed", "HLTXElectronMuon"}
+   replace hltHiggsValidation.histName = "HLTHiggsValidation-WW"
+
+   
