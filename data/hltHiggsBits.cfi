@@ -1,0 +1,30 @@
+   module hltHiggsBits = HLTHiggsBits{
+     string recjets = "iterativeCone5CaloJets"
+     string genjets = "iterativeCone5GenJets"
+     string recmet  = "met"
+     string genmet  = "genMet"
+     string calotowers = "towerMaker"
+     string Electron = "pixelMatchGsfElectrons"
+     string Photon = "correctedPhotons"
+     string muon = "muons" // other alternative : trackMuons
+     string l1extramc = "l1extraParticles"
+     string particleMapSource = "l1extraParticleMap"
+     string ecalDigisLabel = "ecalTriggerPrimitiveDigis"
+     string hcalDigisLabel = "hcalTriggerPrimitiveDigis"
+     InputTag HLTriggerResults = TriggerResults
+     InputTag L1ExtraParticleMap = l1extraParticleMap
+     InputTag L1GTReadoutRecord = l1GtEmulDigis
+     InputTag L1GTObjectMapTag = l1GtEmulDigis
+     string histName = "HLTHiggsValidation.root"
+     InputTag MCTruth = "genParticleCandidates"
+     vstring hltBitNames = {" "}
+     int32   Nchannel = 0
+     PSet RunParameters =
+     {
+       bool Monte = true
+       bool Debug = true
+       double EtaMin   = -2.5
+       double EtaMax   = 2.5
+     }
+   }
+

@@ -1,0 +1,32 @@
+  source = PoolSource {
+    untracked vstring fileNames = {
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/06DEC94B-BAEA-DC11-ACAB-000423D9880C.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/1A8B002E-9FEA-DC11-A044-001617C3B5E4.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/2E7DD0DC-A1EA-DC11-8E36-000423D6B444.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/30BF01E7-A4EA-DC11-B75F-001617C3B6CE.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/32405683-A9EA-DC11-9BE1-001617C3B6E8.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/3C4ED151-B6EA-DC11-BBC6-001617DBD5AC.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/481236E6-9CEA-DC11-9FC8-0016177CA778.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/4CC8822D-9FEA-DC11-B1D0-001617DBCF1E.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/5C4918EE-A8EA-DC11-9EE8-001617C3B76A.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/5C8A040F-A6EA-DC11-AA8D-0016177CA778.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/7E54265A-B6EA-DC11-84C4-001617E30E2C.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/924DF007-B4EA-DC11-AC3F-000423D6CA6E.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/9C2DA143-A1EA-DC11-AA5A-001617E30D0A.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/AE0CCAFD-B8EA-DC11-AF88-000423D98DB4.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/C454FED8-AFEA-DC11-B10B-000423D6BA18.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/D482EA1A-B7EA-DC11-8306-001617DBD230.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/D653BAF4-A3EA-DC11-A551-001617E30E28.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/E84B681A-B7EA-DC11-90ED-001617E30CD4.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/EE065B38-9AEA-DC11-92AB-000423D98804.root',
+    '/store/relval/2008/3/4/RelVal-RelValHiggsH200ZZ4L-1199722255-HLT/0000/FA62BA46-A1EA-DC11-B696-001617C3B778.root'
+    }
+  }
+
+
+   module hltHiggsValidation = hltHiggsBits from "HLTriggerOffline/Higgs/data/hltHiggsBits.cfi"
+   replace hltHiggsValidation.Nchannel = 1
+   replace hltHiggsValidation.hltBitNames = {"HLT1MuonNonIso", "HLT1ElectronRelaxed", "HLT1MuonIso", "HLT1Electron", "HLT2MuonNonIso", 
+                              "CandHLT2MuonIso", "HLT2ElectronRelaxed", "HLT2Electron", "HLTXElectronMuonRelaxed", "HLTXElectronMuon"}
+   replace hltHiggsValidation.histName = "HLTHiggsValidation-ZZ"
+
