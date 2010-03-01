@@ -18,7 +18,7 @@ process.maxEvents = cms.untracked.PSet(
     input = cms.untracked.int32(-1)
 )
 
-process.dqmSaverMy = cms.EDFilter("DQMFileSaver",
+process.dqmSaverMy = cms.EDAnalyzer("DQMFileSaver",
         convention=cms.untracked.string("Offline"),
     
           workflow=cms.untracked.string("/HLT/Higgs/Validation"),
